@@ -59,6 +59,11 @@
         "Fermer les papillotes et cuire 15 min à 200 °C.",
         "Faire tomber les épinards à la poêle 5 min.",
         "Servir avec le riz."
+      ],
+      "seasons": [
+        "printemps",
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -100,6 +105,9 @@
         "Faire dorer les lardons à sec.",
         "Ajouter la ratatouille et réchauffer 5 min.",
         "Mélanger avec les pâtes, parsemer de parmesan."
+      ],
+      "seasons": [
+        "ete"
       ]
     },
     {
@@ -160,6 +168,10 @@
         "Couper les aubergines en dés et les dorer 10 min à l'huile.",
         "Saisir le bœuf 3 min à feu vif, ajouter les aubergines et la marinade.",
         "Servir sur le riz."
+      ],
+      "seasons": [
+        "ete",
+        "automne"
       ]
     },
     {
@@ -219,6 +231,10 @@
         "Faire revenir l'oignon et les lardons.",
         "Ajouter les champignons émincés, cuire 8 min.",
         "Verser la crème, poivrer, mélanger aux pâtes."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -280,7 +296,8 @@
         "Pocher le colin 8 min dans l'eau frémissante salée.",
         "Aïoli express : mayonnaise, ail râpé, jus de citron.",
         "Servir mayo pour les enfants, aïoli pour les grands."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Omelette aux épinards",
@@ -328,6 +345,11 @@
         "Faire tomber les épinards à la poêle.",
         "Battre les œufs, saler, poivrer, ajouter le gruyère.",
         "Verser sur les épinards, cuire à couvert 6 min."
+      ],
+      "seasons": [
+        "printemps",
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -382,7 +404,8 @@
         "Faire revenir l'ail, ajouter la purée de tomates, mijoter 10 min.",
         "Ajouter les épinards, puis la ricotta hors du feu.",
         "Mélanger avec les pâtes."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Wraps au poulet",
@@ -435,6 +458,10 @@
         "Émincer et dorer le poulet 8 min.",
         "Couper les tomates cerises, laver la salade.",
         "Chacun garnit son wrap."
+      ],
+      "seasons": [
+        "printemps",
+        "ete"
       ]
     },
     {
@@ -494,6 +521,10 @@
         "Émincer les endives, couper la pomme et le comté en dés.",
         "Vinaigrette moutarde, ajouter les noix.",
         "Réchauffer les knackis 5 min dans l'eau frémissante."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -538,6 +569,9 @@
         "Étaler la pâte, badigeonner de moutarde.",
         "Disposer tomates et rondelles de chèvre, jambon cru si on veut.",
         "Cuire 25 min à 200 °C."
+      ],
+      "seasons": [
+        "ete"
       ]
     },
     {
@@ -588,7 +622,8 @@
         "Dorer les lardons.",
         "Battre œufs, crème, lait, ajouter les lardons et le gruyère.",
         "Verser sur la pâte, cuire 35 min à 190 °C."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Pizza maison jambon-champignons",
@@ -634,7 +669,8 @@
         "Étaler la pâte, napper de tomate.",
         "Ajouter jambon, champignons émincés, mozzarella.",
         "Cuire 15 min à 240 °C."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Lomo saltado",
@@ -713,7 +749,8 @@
         "Saisir le bœuf en lanières à feu très vif, réserver.",
         "Sauter oignon rouge et tomates en quartiers 2 min, ajouter ail, soja, vinaigre, ají.",
         "Remettre le bœuf, mélanger avec les frites, coriandre."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Saltado d'aubergine",
@@ -780,6 +817,10 @@
         "Dorer l'aubergine en bâtonnets à feu vif.",
         "Ajouter oignon rouge, tomates, ail et soja, sauter 3 min.",
         "Servir avec le riz et la coriandre."
+      ],
+      "seasons": [
+        "ete",
+        "automne"
       ]
     },
     {
@@ -789,8 +830,7 @@
       "prep_minutes": 40,
       "tags": [
         "vegetarien",
-        "leger",
-        "saison"
+        "leger"
       ],
       "ingredients": [
         {
@@ -834,6 +874,10 @@
         "Émincer les légumes, les faire suer 5 min.",
         "Couvrir d'eau, cuire 25 min, mixer.",
         "Servir avec des tartines grillées au comté."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -843,8 +887,7 @@
       "prep_minutes": 35,
       "tags": [
         "vegetarien",
-        "leger",
-        "saison"
+        "leger"
       ],
       "ingredients": [
         {
@@ -881,6 +924,10 @@
       "steps": [
         "Couper le potimarron (avec la peau) et l'oignon.",
         "Couvrir d'eau, cuire 25 min, mixer avec la crème."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -889,8 +936,7 @@
       "servings": 4,
       "prep_minutes": 35,
       "tags": [
-        "vegetarien",
-        "saison"
+        "vegetarien"
       ],
       "ingredients": [
         {
@@ -935,6 +981,10 @@
         "Poêler les champignons.",
         "Cuire les œufs au plat.",
         "Dresser avec les noix concassées."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -943,8 +993,7 @@
       "servings": 4,
       "prep_minutes": 50,
       "tags": [
-        "vegetarien",
-        "saison"
+        "vegetarien"
       ],
       "ingredients": [
         {
@@ -988,6 +1037,10 @@
         "Précuire les légumes 8 min à la vapeur.",
         "Mettre dans un plat, napper de crème, émietter la feta, parsemer de graines.",
         "Gratiner 25 min à 200 °C."
+      ],
+      "seasons": [
+        "printemps",
+        "ete"
       ]
     },
     {
@@ -996,8 +1049,7 @@
       "servings": 4,
       "prep_minutes": 45,
       "tags": [
-        "vegetarien",
-        "saison"
+        "vegetarien"
       ],
       "ingredients": [
         {
@@ -1053,6 +1105,10 @@
         "Rôtir la butternut en cubes 30 min à 200 °C.",
         "Cuire le quinoa.",
         "Mélanger avec l'oignon revenu, la feta, raisins et amandes."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1144,6 +1200,10 @@
         "Monter en couches pâtes, bolognaise, béchamel.",
         "Mozzarella et parmesan sur le dessus, cuire 40 min à 180 °C.",
         "Congeler 2 portions."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1153,7 +1213,6 @@
       "prep_minutes": 120,
       "tags": [
         "mijote",
-        "saison",
         "a_congeler"
       ],
       "ingredients": [
@@ -1229,6 +1288,10 @@
         "Légumes en gros morceaux sur une plaque, huile, sel, 45 min à 200 °C.",
         "Houmous : pois chiches, citron, ail, huile d'olive, mixer.",
         "Congeler 2 portions pour les midis."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1314,6 +1377,10 @@
         "Revenir oignon, ail, poivron, cumin, ají.",
         "Ajouter tomates, purée, carottes, le poulet, couvrir d'eau, mijoter 45 min.",
         "Petits pois les 10 dernières minutes. Servir avec du riz."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1406,7 +1473,8 @@
         "Revenir oignon, ail, ají ; ajouter la crème de pain, du bouillon, puis le poulet.",
         "Servir avec riz, pommes de terre, œufs durs et olives.",
         "Congeler 2 portions."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Seco de res",
@@ -1480,6 +1548,10 @@
         "Revenir oignons, ail, ají, ajouter la coriandre mixée et le bœuf, couvrir d'eau.",
         "Mijoter 1 h 45, carottes et petits pois la dernière demi-heure.",
         "Servir avec riz et haricots."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1540,6 +1612,10 @@
         "Effilocher, remettre dans le bouillon avec les pommes de terre en dés, 15 min.",
         "Ajouter les vermicelles 4 min.",
         "Coriandre et citron vert au service."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1611,6 +1687,10 @@
         "Mélanger thon et mayonnaise.",
         "Monter en couches : purée, thon, avocat, purée.",
         "Décorer d'œufs durs et d'olives, servir frais."
+      ],
+      "seasons": [
+        "printemps",
+        "ete"
       ]
     },
     {
@@ -1678,6 +1758,10 @@
         "Revenir oignons, ail, cumin, tomates.",
         "Remettre le bœuf, couvrir d'eau, mijoter 1 h 30.",
         "Ajouter pommes de terre, carottes, petits pois, 30 min de plus."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1742,7 +1826,8 @@
         "Cuire le riz.",
         "Farce : oignon, carottes en dés, petits pois, purée de tomates, thon, olives.",
         "Dans un bol : riz, farce, riz, tasser et démouler sur l'assiette."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Raclette",
@@ -1787,6 +1872,9 @@
       "steps": [
         "Cuire les pommes de terre en robe des champs 25 min.",
         "Disposer fromage, charcuterie, cornichons, salade."
+      ],
+      "seasons": [
+        "hiver"
       ]
     },
     {
@@ -1795,8 +1883,7 @@
       "servings": 4,
       "prep_minutes": 120,
       "tags": [
-        "mijote",
-        "saison"
+        "mijote"
       ],
       "ingredients": [
         {
@@ -1846,6 +1933,10 @@
         "Rouelle au four 1 h 30 à 170 °C avec un fond d'eau.",
         "Précuire le chou-fleur 10 min.",
         "Béchamel, napper le chou-fleur, gruyère, 25 min à 200 °C."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -1917,7 +2008,8 @@
         "Griller les merguez.",
         "Préparer la semoule.",
         "Servir avec raisins secs."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Poulet coco au curry",
@@ -1973,7 +2065,8 @@
         "Mariner le poulet dans yaourt et curry.",
         "Dorer, ajouter le lait de coco, mijoter 20 min.",
         "Servir avec riz, cajou et coriandre."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Poulet à la crème et aux champignons",
@@ -2017,6 +2110,10 @@
         "Dorer le poulet en morceaux.",
         "Ajouter oignon et champignons, 10 min.",
         "Crème, mijoter 10 min, servir avec le riz."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -2087,6 +2184,10 @@
         "Purée : pommes de terre, beurre, lait.",
         "Revenir oignons, carottes, viande, purée de tomates.",
         "Monter le hachis, gruyère, 25 min à 200 °C."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -2151,6 +2252,10 @@
         "Revenir oignon et carottes, cumin.",
         "Ajouter purée de tomates, haricots, maïs, mijoter 25 min.",
         "Servir avec riz et avocat."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -2216,6 +2321,10 @@
         "Mélanger yaourt, sucre, œufs, huile, farine, levure.",
         "Ajouter les pommes en dés et la cannelle.",
         "Cuire 35 min à 180 °C."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -2263,7 +2372,8 @@
         "Fondre chocolat et beurre.",
         "Ajouter sucre, œufs, farine.",
         "Cuire 25 min à 180 °C."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Carrot cake",
@@ -2340,7 +2450,8 @@
         "Mélanger œufs, sucre, huile, farine, levure, cannelle, carottes, noix.",
         "Cuire 45 min à 170 °C.",
         "Glaçage : Philadelphia et sucre glace."
-      ]
+      ],
+      "seasons": []
     },
     {
       "title": "Crumble pommes-poires",
@@ -2348,8 +2459,7 @@
       "servings": 6,
       "prep_minutes": 50,
       "tags": [
-        "dessert",
-        "saison"
+        "dessert"
       ],
       "ingredients": [
         {
@@ -2387,6 +2497,10 @@
         "Couper les fruits dans un plat.",
         "Sabler farine, beurre, sucre.",
         "Couvrir les fruits, cuire 35 min à 180 °C."
+      ],
+      "seasons": [
+        "automne",
+        "hiver"
       ]
     },
     {
@@ -2434,7 +2548,8 @@
         "Crémer beurre et sucre, ajouter œuf, vanille, farine.",
         "Pocher à la douille sur la plaque.",
         "Cuire 12 min à 180 °C."
-      ]
+      ],
+      "seasons": []
     }
   ]
 }

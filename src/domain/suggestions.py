@@ -8,12 +8,15 @@ from src.domain.constants import (
     RECENTLY_COOKED_DAYS,
     SCORE_AVAILABILITY_WEIGHT,
     SCORE_EXPIRING_BONUS,
+    SCORE_IN_SEASON_BONUS,
     SCORE_MEMBER_COOK_BONUS,
     SCORE_MEMBER_FAN_BONUS,
+    SCORE_OUT_OF_SEASON_PENALTY,
     SCORE_QUICK_BONUS,
     SCORE_RECENTLY_COOKED_PENALTY,
 )
-from src.domain.entities import CookLog, Recipe, RecipeTag, StockItem
+from src.domain.entities import CookLog, Recipe, RecipeTag, Season, StockItem
+from src.domain.seasons import SEASON_LABELS, describe_seasons, season_of
 
 
 class SuggestionCriteria(BaseModel):
@@ -22,7 +25,12 @@ class SuggestionCriteria(BaseModel):
     quick_only: bool = False
     only_member_recipes: bool = False
     tag: RecipeTag | None = None
+    season: Season | None = None
     limit: int = DEFAULT_SUGGESTION_LIMIT
+
+    @property
+    def target_season(self) -> Season:
+        return self.season or season_of(self.today)
 
 
 class Suggestion(BaseModel):
@@ -41,6 +49,8 @@ def _is_eligible(recipe: Recipe, criteria: SuggestionCriteria) -> bool:
     if criteria.tag is not None and criteria.tag not in recipe.tags:
         return False
     if criteria.tag is None and RecipeTag.DESSERT in recipe.tags:
+        return False
+    if criteria.season is not None and not recipe.fits(criteria.season):
         return False
     if criteria.quick_only and not recipe.is_quick:
         return False
@@ -73,6 +83,14 @@ def _history_reasons(
     return -SCORE_RECENTLY_COOKED_PENALTY, [f"Déjà cuisiné {label}"]
 
 
+def _season_reasons(recipe: Recipe, season: Season) -> tuple[float, list[str]]:
+    if not recipe.seasons:
+        return 0.0, []
+    if season in recipe.seasons:
+        return SCORE_IN_SEASON_BONUS, [f"De saison ({SEASON_LABELS[season]})"]
+    return -SCORE_OUT_OF_SEASON_PENALTY, [f"Plutôt {describe_seasons(recipe.seasons)}"]
+
+
 def _member_reasons(recipe: Recipe, criteria: SuggestionCriteria) -> tuple[float, list[str]]:
     score = 0.0
     reasons: list[str] = []
@@ -100,6 +118,7 @@ def _suggest(
     parts = [
         _availability_reasons(availability),
         _history_reasons(recipe, logs, criteria.today),
+        _season_reasons(recipe, criteria.target_season),
         _member_reasons(recipe, criteria),
     ]
     return Suggestion(

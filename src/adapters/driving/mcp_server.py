@@ -17,6 +17,7 @@ from src.domain.entities import (
     RecipeContent,
     RecipeSource,
     RecipeTag,
+    Season,
     ShoppingChannel,
     ShoppingTrip,
     StockItem,
@@ -41,6 +42,7 @@ class RecipeOverview(BaseModel):
     prep_minutes: int
     is_quick: bool
     tags: list[RecipeTag]
+    seasons: list[Season]
     cooks: list[str]
     fans: list[str]
     ingredients: list[str]
@@ -59,6 +61,7 @@ def _overview(recipe: Recipe) -> RecipeOverview:
         prep_minutes=recipe.prep_minutes,
         is_quick=recipe.is_quick,
         tags=recipe.tags,
+        seasons=recipe.seasons,
         cooks=recipe.cooks,
         fans=recipe.fans,
         ingredients=[ingredient.name for ingredient in recipe.ingredients],
@@ -85,14 +88,18 @@ def build_mcp_server(container_provider: Callable[[], Container]) -> MCPServer:
         return await container_provider().stock_service.overview(_today())
 
     @server.tool(
-        description="Liste les recettes du foyer, filtrables par membre (qui sait la faire ou l'aime), tag et rapidité."
+        description=(
+            "Liste les recettes du foyer, filtrables par membre (qui sait la faire ou l'aime), tag, rapidité et saison. "
+            "seasons vide = recette de toute l'année ; le filtre season garde aussi ces recettes-là."
+        )
     )
     async def list_recipes(
         member: str | None = None,
         tag: RecipeTag | None = None,
         quick_only: bool = False,
+        season: Season | None = None,
     ) -> list[RecipeOverview]:
-        recipes = await container_provider().recipe_service.list_recipes(member, tag, quick_only)
+        recipes = await container_provider().recipe_service.list_recipes(member, tag, quick_only, season)
         return [_overview(recipe) for recipe in recipes]
 
     @server.tool(description="Recette complète : ingrédients avec quantités, étapes, tags, membres.")

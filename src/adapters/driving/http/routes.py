@@ -14,6 +14,7 @@ from src.domain.entities import (
     Recipe,
     RecipeContent,
     RecipeTag,
+    Season,
     ShoppingChannel,
     ShoppingTrip,
     StockCategory,
@@ -90,8 +91,9 @@ async def list_recipes(
     member: str | None = None,
     tag: RecipeTag | None = None,
     quick: bool = False,
+    season: Season | None = None,
 ) -> list[Recipe]:
-    return await container.recipe_service.list_recipes(member, tag, quick)
+    return await container.recipe_service.list_recipes(member, tag, quick, season)
 
 
 @router.post("/recipes", status_code=status.HTTP_201_CREATED)
@@ -102,7 +104,14 @@ async def create_recipe(container: ContainerDep, body: RecipeCreateRequest) -> R
 
 @router.post("/recipes/drafts")
 async def draft_new_recipe(container: ContainerDep, day: DayDep, body: NewRecipeDraftRequest) -> RecipeContent:
-    return await container.recipe_studio.draft_new(body.request, body.member, body.quick, body.use_stock, day)
+    return await container.recipe_studio.draft_new(
+        body.request,
+        body.member,
+        body.quick,
+        body.use_stock,
+        day,
+        body.season,
+    )
 
 
 @router.get("/recipes/{recipe_id}")
@@ -160,6 +169,7 @@ async def suggestions(
     quick: bool = False,
     mine: bool = False,
     tag: RecipeTag | None = None,
+    season: Season | None = None,
     limit: Annotated[int, Query(ge=1, le=100)] = DEFAULT_SUGGESTION_LIMIT,
 ) -> list[Suggestion]:
     criteria = SuggestionCriteria(
@@ -168,6 +178,7 @@ async def suggestions(
         quick_only=quick,
         only_member_recipes=mine,
         tag=tag,
+        season=season,
         limit=limit,
     )
     return await container.suggestion_service.suggest(criteria)

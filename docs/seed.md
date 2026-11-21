@@ -5,7 +5,7 @@ Chargées au démarrage par `SeedDatabase.seed_if_empty` uniquement si la base n
 
 | Fichier | Versionné | Contenu |
 |---|---|---|
-| `seed/recipes.json` | oui | ~40 recettes familiales (express, mijotés, péruviennes, végétariennes, desserts) |
+| `seed/recipes.json` | oui | ~40 recettes familiales (express, mijotés, péruviennes, végétariennes, desserts), avec leurs saisons |
 | `seed/pantry.json` | oui | Basiques, petit-déj et goûters, fruits (circuit marché), consommables maison, café (autre fournisseur) |
 | `data/private_seed.json` | **non** | `recipe_members` (qui sait faire / aime chaque recette), `notes` du foyer, `trips` (historique de courses réel) |
 

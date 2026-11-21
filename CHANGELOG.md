@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0 — 2026-11-21
+
+- Saisons des recettes (`seasons` : printemps, été, automne, hiver, plusieurs possibles ; vide = toute l'année),
+  remplacent le tag `saison`.
+- Filtre `season` sur `/api/recipes`, `/api/suggestions` et l'outil MCP `list_recipes`.
+- Suggestions : bonus pour les recettes de la saison visée, pénalité pour celles d'une autre saison.
+- Génération ChatGPT pour une saison donnée (saison du jour par défaut), qui renvoie aussi les saisons.
+- Seed : saisons des 40 recettes.
+
 ## 0.1.0 — 2026-11-21
 
 - Première version : stock par familles (cuisine, basiques, petit-déj et goûters, fruits, maison) et par circuit

@@ -1,8 +1,9 @@
 from datetime import UTC, datetime
 from enum import StrEnum
+from typing import Any
 from uuid import UUID, uuid4
 
-from pydantic import BaseModel, Field, computed_field
+from pydantic import BaseModel, Field, computed_field, field_validator
 
 from src.domain.constants import DEFAULT_SERVINGS, QUICK_RECIPE_MAX_MINUTES
 
@@ -21,9 +22,18 @@ class RecipeTag(StrEnum):
     BATCH = "a_congeler"
     GUESTS = "invites"
     KIDS = "enfants"
-    SEASONAL = "saison"
     DESSERT = "dessert"
     BREAKFAST = "petit_dej"
+
+
+_LEGACY_TAGS = frozenset({"saison"})
+
+
+class Season(StrEnum):
+    SPRING = "printemps"
+    SUMMER = "ete"
+    AUTUMN = "automne"
+    WINTER = "hiver"
 
 
 class RecipeSource(StrEnum):
@@ -48,6 +58,22 @@ class RecipeContent(BaseModel):
     ingredients: list[RecipeIngredient]
     steps: list[str]
     tags: list[RecipeTag] = Field(default_factory=list)
+    seasons: list[Season] = Field(default_factory=list)
+
+    @field_validator("tags", mode="before")
+    @classmethod
+    def _drop_legacy_tags(cls, value: Any) -> Any:
+        if isinstance(value, list):
+            return [tag for tag in value if tag not in _LEGACY_TAGS]
+        return value
+
+    @field_validator("seasons")
+    @classmethod
+    def _sort_seasons(cls, value: list[Season]) -> list[Season]:
+        return [season for season in Season if season in value]
+
+    def fits(self, season: Season) -> bool:
+        return not self.seasons or season in self.seasons
 
 
 class Recipe(RecipeContent):
@@ -74,6 +100,7 @@ class Recipe(RecipeContent):
         self.ingredients = content.ingredients
         self.steps = content.steps
         self.tags = content.tags
+        self.seasons = content.seasons
         self.updated_at = _now()
 
     def set_preference(

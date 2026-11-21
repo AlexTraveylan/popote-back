@@ -25,10 +25,20 @@ Portions → facteur `servings / recipe.servings`. Pour chaque ingrédient trouv
 Résultat `CookLog` : `consumed` (restauré par l'annulation), `not_counted` (non suivi ou unité incompatible),
 `missing` (absent du stock).
 
+## Saisons (`entities/_recipe.py:Season`, `seasons.py`)
+
+`Recipe.seasons` : `printemps`, `ete`, `automne`, `hiver`, plusieurs possibles ; liste vide = toute l'année.
+`Recipe.fits(season)` est vrai si la liste est vide ou contient la saison. `season_of(day)` suit les saisons
+météorologiques (déc.–fév. hiver, mars–mai printemps, juin–août été, sept.–nov. automne).
+L'ancien tag `saison` est retiré à la lecture (`RecipeContent._drop_legacy_tags`).
+
 ## Suggestions (`suggestions.py:rank_recipes`)
 
 Score = ratio d'ingrédients dispo × 100 + 15 par ingrédient à finir vite − 50 si cuisiné depuis moins de
-`RECENTLY_COOKED_DAYS` jours + 12 si le membre aime + 8 s'il sait la faire (+10 « rapide » quand le filtre rapide est actif).
+`RECENTLY_COOKED_DAYS` jours + 12 si le membre aime + 8 s'il sait la faire (+10 « rapide » quand le filtre rapide est actif)
++ 10 si la recette est marquée pour la saison visée, − 30 si elle est marquée pour d'autres saisons
+(saison visée = filtre `season`, sinon `season_of(today)` ; les recettes « toute l'année » sont neutres).
+Le filtre `season` exclut les recettes qui ne lui correspondent pas.
 Les desserts sont exclus sauf filtre `tag=dessert`. Constantes : `domain/constants.py`.
 
 ## Contexte de courses (`shopping.py:build_shopping_context`)

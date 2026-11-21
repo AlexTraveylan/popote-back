@@ -2,7 +2,7 @@ from datetime import date
 from uuid import UUID
 
 from src.domain.constants import EXPIRING_SOON_DAYS
-from src.domain.entities import RecipeContent, StockKind
+from src.domain.entities import RecipeContent, Season, StockKind
 from src.domain.errors import NotFoundError
 from src.domain.household import Household
 from src.domain.ports import (
@@ -12,6 +12,7 @@ from src.domain.ports import (
     RecipeRepository,
     StockRepository,
 )
+from src.domain.seasons import season_of
 
 _COOKING_KINDS = (StockKind.INGREDIENT, StockKind.STAPLE)
 
@@ -37,12 +38,14 @@ class RecipeStudio:
         quick: bool,
         use_stock: bool,
         today: date,
+        season: Season | None = None,
     ) -> GenerationContext:
         stock = [item for item in await self._stock.list_all() if item.kind in _COOKING_KINDS and item.is_available]
         return GenerationContext(
             members=self._household.members,
             member=self._household.ensure_member(member) if member else None,
             quick=quick,
+            season=season or season_of(today),
             available_ingredients=[item.name for item in stock] if use_stock else [],
             expiring_ingredients=[item.name for item in stock if item.expires_within(today, EXPIRING_SOON_DAYS)],
             household_notes=[note.text for note in await self._notes.list_all()],
@@ -56,8 +59,9 @@ class RecipeStudio:
         quick: bool,
         use_stock: bool,
         today: date,
+        season: Season | None = None,
     ) -> RecipeContent:
-        context = await self._context(member, quick, use_stock, today)
+        context = await self._context(member, quick, use_stock, today, season)
         return await self._generator.create(request, context)
 
     async def draft_rework(

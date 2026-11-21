@@ -24,7 +24,7 @@ Claude Desktop (connecteur local via `mcp-remote`) dans `claude_desktop_config.j
 |---|---|
 | `get_shopping_context` | Tout pour préparer les courses (voir `domain.md`, contexte de courses) |
 | `list_available_ingredients` | Ingrédients dispo + à racheter par circuit (drive, marché, autre) |
-| `list_recipes(member?, tag?, quick_only?)` | Vue compacte des recettes |
+| `list_recipes(member?, tag?, quick_only?, season?)` | Vue compacte des recettes, avec `seasons` |
 | `get_recipe(recipe_id)` | Recette complète |
 | `add_recipe(recipe, cooks?, fans?)` | Ajouter une recette discutée avec l'utilisateur (source `claude`) |
 | `update_recipe(recipe_id, recipe)` | Remplacer le contenu |

@@ -3,12 +3,13 @@ from typing import Final, override
 from openai import AsyncOpenAI, OpenAIError
 from pydantic import BaseModel
 
-from src.domain.entities import RecipeContent, RecipeIngredient, RecipeTag
+from src.domain.entities import RecipeContent, RecipeIngredient, RecipeTag, Season
 from src.domain.errors import RecipeGenerationError
 from src.domain.ports import GenerationContext, RecipeGenerator
+from src.domain.seasons import SEASON_LABELS
 
 _INSTRUCTIONS: Final = """Tu es le cuisinier d'un foyer français (deux adultes, deux enfants de 6 et 8 ans) avec une touche péruvienne.
-Tu proposes des recettes familiales réalistes, de saison, en français.
+Tu proposes des recettes familiales réalistes, en français, avec les produits de la saison visée.
 Règles de sortie :
 - Noms d'ingrédients courts et génériques, au pluriel courant, sans marque (ex. « pommes de terre », « crème fraîche », « lardons »), pour qu'ils correspondent au stock du foyer.
 - Unités parmi : g, kg, ml, cl, l, piece, c. à s., c. à c., tranche, gousse, botte, pincée. quantity = null si sans objet (sel, poivre).
@@ -16,6 +17,7 @@ Règles de sortie :
 - servings = 4 par défaut. prep_minutes = temps total réel (préparation + cuisson).
 - steps : 3 à 8 étapes courtes et concrètes.
 - tags : uniquement parmi la liste autorisée ; « rapide » seulement si prep_minutes <= 30.
+- seasons : saisons où la recette a du sens (printemps, ete, automne, hiver), plusieurs possibles ; liste vide si elle se fait toute l'année.
 - Ne propose pas un titre déjà existant dans le foyer."""
 
 
@@ -34,6 +36,7 @@ class _GeneratedRecipe(BaseModel):
     ingredients: list[_GeneratedIngredient]
     steps: list[str]
     tags: list[RecipeTag]
+    seasons: list[Season]
 
 
 def _describe_context(context: GenerationContext) -> str:
@@ -42,6 +45,7 @@ def _describe_context(context: GenerationContext) -> str:
         lines.append(f"La recette est pour {context.member}, qui la cuisinera.")
     if context.quick:
         lines.append("Contrainte : recette rapide, 30 minutes maximum tout compris.")
+    lines.append(f"Saison visée : {SEASON_LABELS[context.season]}.")
     if context.available_ingredients:
         lines.append(f"Ingrédients disponibles à utiliser en priorité : {', '.join(context.available_ingredients)}.")
     if context.expiring_ingredients:
@@ -76,6 +80,7 @@ def _to_content(generated: _GeneratedRecipe) -> RecipeContent:
         ],
         steps=generated.steps,
         tags=list(dict.fromkeys(generated.tags)),
+        seasons=generated.seasons,
     )
 
 

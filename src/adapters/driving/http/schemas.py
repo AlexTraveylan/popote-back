@@ -3,7 +3,7 @@ from uuid import UUID
 
 from pydantic import BaseModel, Field
 
-from src.domain.entities import MealSlot, RecipeContent, RecipeSource, ShoppingChannel, StockCategory, StockKind
+from src.domain.entities import MealSlot, RecipeContent, RecipeSource, Season, ShoppingChannel, StockCategory, StockKind
 
 
 class HouseholdResponse(BaseModel):
@@ -37,6 +37,7 @@ class NewRecipeDraftRequest(BaseModel):
     member: str | None = None
     quick: bool = False
     use_stock: bool = True
+    season: Season | None = None
 
 
 class ReworkDraftRequest(BaseModel):

@@ -13,16 +13,16 @@ Routes dans `src/adapters/driving/http/routes.py`. OpenAPI interactif : `http://
 | PATCH | `/api/stock/{id}` | Modifier (`StockItemPatch`, `clear_quantity`, `clear_expiry`) |
 | PUT | `/api/stock/{id}/running-low` | Case « bientôt plus » |
 | DELETE | `/api/stock/{id}` | Retirer |
-| GET | `/api/recipes?member=&tag=&quick=` | Recettes |
+| GET | `/api/recipes?member=&tag=&quick=&season=` | Recettes |
 | POST | `/api/recipes` | Créer (contenu + `cooks`, `fans`, `source`) |
 | GET/PUT/DELETE | `/api/recipes/{id}` | Lire, remplacer le contenu, supprimer |
 | PUT | `/api/recipes/{id}/members` | Remplacer `cooks` et `fans` |
 | PUT | `/api/recipes/{id}/preferences` | `{member, can_cook?, likes?}` |
 | GET | `/api/recipes/{id}/availability?on=` | Ingrédient par ingrédient vs stock |
-| POST | `/api/recipes/drafts` | Brouillon ChatGPT `{request, member, quick, use_stock}` |
+| POST | `/api/recipes/drafts` | Brouillon ChatGPT `{request, member, quick, use_stock, season?}` |
 | POST | `/api/recipes/{id}/drafts` | Retouche ChatGPT `{instruction, member}` |
 | POST | `/api/recipes/{id}/cook` | « J'ai cuisiné » `{member, servings?, cooked_on?}` → `CookLog` |
-| GET | `/api/suggestions?on=&member=&quick=&mine=&tag=&limit=` | Recettes du jour classées |
+| GET | `/api/suggestions?on=&member=&quick=&mine=&tag=&season=&limit=` | Recettes du jour classées |
 | GET | `/api/cook-logs?start=&end=` · `/api/cook-logs/week?on=` | Repas cuisinés |
 | DELETE | `/api/cook-logs/{id}` | Annuler (restaure le stock) |
 | GET/POST | `/api/plan` · DELETE `/api/plan/{id}` | Planning |

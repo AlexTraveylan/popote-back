@@ -9,7 +9,7 @@ from src.adapters.driven.repositories import (
     InMemoryStockRepository,
 )
 from src.container import Container
-from src.domain.entities import RecipeContent, RecipeIngredient, RecipeTag
+from src.domain.entities import RecipeContent, RecipeIngredient, RecipeTag, Season
 from src.domain.household import Household
 from src.domain.ports import GenerationContext, RecipeGenerator
 
@@ -32,6 +32,7 @@ class FakeRecipeGenerator(RecipeGenerator):
             ingredients=[RecipeIngredient(name=name, quantity=100, unit="g") for name in context.available_ingredients],
             steps=["Cuisiner."],
             tags=[RecipeTag.QUICK],
+            seasons=[context.season],
         )
 
     @override
@@ -65,6 +66,7 @@ def recipe_content(
     ingredients: list[tuple[str, float | None, str | None]],
     prep_minutes: int = 20,
     tags: list[RecipeTag] | None = None,
+    seasons: list[Season] | None = None,
 ) -> RecipeContent:
     return RecipeContent(
         title=title,
@@ -72,4 +74,5 @@ def recipe_content(
         ingredients=[RecipeIngredient(name=name, quantity=quantity, unit=unit) for name, quantity, unit in ingredients],
         steps=["Préparer.", "Servir."],
         tags=tags or [],
+        seasons=seasons or [],
     )

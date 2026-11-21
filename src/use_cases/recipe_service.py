@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from src.domain.entities import Recipe, RecipeContent, RecipeSource, RecipeTag
+from src.domain.entities import Recipe, RecipeContent, RecipeSource, RecipeTag, Season
 from src.domain.errors import NotFoundError
 from src.domain.household import Household
 from src.domain.ports import RecipeRepository
@@ -16,6 +16,7 @@ class RecipeService:
         member: str | None = None,
         tag: RecipeTag | None = None,
         quick_only: bool = False,
+        season: Season | None = None,
     ) -> list[Recipe]:
         recipes = await self._repository.list_all()
         if member is not None:
@@ -25,6 +26,8 @@ class RecipeService:
             recipes = [recipe for recipe in recipes if tag in recipe.tags]
         if quick_only:
             recipes = [recipe for recipe in recipes if recipe.is_quick]
+        if season is not None:
+            recipes = [recipe for recipe in recipes if recipe.fits(season)]
         return sorted(recipes, key=lambda recipe: recipe.title.lower())
 
     async def get(self, recipe_id: UUID) -> Recipe:
