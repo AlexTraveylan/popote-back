@@ -1,0 +1,27 @@
+# IDE
+.idea/
+.vscode/
+.zed/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# Secrets et données locales (base SQLite, seed privé du foyer)
+.env
+*.env
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,379 @@
+{
+  "stock": [
+    {
+      "name": "sel",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "poivre",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "huile d'olive",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "huile neutre",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "vinaigre",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "moutarde",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "mayonnaise",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "ketchup",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "sauce soja",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "bouillon de volaille",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "muscade",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "cumin",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "curry",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "paprika",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "épices couscous",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "herbes de Provence",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "ail",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "pâte d'ají amarillo",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "papier cuisson",
+      "kind": "basique",
+      "category": "epicerie_salee"
+    },
+    {
+      "name": "farine",
+      "kind": "basique",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "sucre",
+      "kind": "basique",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "sucre vanillé",
+      "kind": "basique",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "levure chimique",
+      "kind": "basique",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "cannelle",
+      "kind": "basique",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "sucre glace",
+      "kind": "basique",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "riz basmati",
+      "kind": "ingredient",
+      "category": "epicerie_salee",
+      "quantity": 1000,
+      "unit": "g"
+    },
+    {
+      "name": "parmesan",
+      "kind": "ingredient",
+      "category": "cremerie",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "name": "muesli",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "chocolat en poudre",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "céréales",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "pain de mie",
+      "kind": "petit_dej_gouter",
+      "category": "pain"
+    },
+    {
+      "name": "confiture",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "pâte à tartiner",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "biscuits",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "gâteaux goûter",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "brioche",
+      "kind": "petit_dej_gouter",
+      "category": "pain"
+    },
+    {
+      "name": "compotes en gourde",
+      "kind": "petit_dej_gouter",
+      "category": "epicerie_sucree"
+    },
+    {
+      "name": "yaourts à boire",
+      "kind": "petit_dej_gouter",
+      "category": "cremerie"
+    },
+    {
+      "name": "petits fromages",
+      "kind": "petit_dej_gouter",
+      "category": "cremerie"
+    },
+    {
+      "name": "yaourts",
+      "kind": "petit_dej_gouter",
+      "category": "cremerie"
+    },
+    {
+      "name": "jus de fruits",
+      "kind": "petit_dej_gouter",
+      "category": "boissons"
+    },
+    {
+      "name": "café",
+      "kind": "petit_dej_gouter",
+      "category": "boissons",
+      "channel": "autre"
+    },
+    {
+      "name": "pommes",
+      "kind": "fruit",
+      "category": "fruits_legumes"
+    },
+    {
+      "name": "poires",
+      "kind": "fruit",
+      "category": "fruits_legumes"
+    },
+    {
+      "name": "bananes",
+      "kind": "fruit",
+      "category": "fruits_legumes"
+    },
+    {
+      "name": "clémentines",
+      "kind": "fruit",
+      "category": "fruits_legumes"
+    },
+    {
+      "name": "kiwis",
+      "kind": "fruit",
+      "category": "fruits_legumes"
+    },
+    {
+      "name": "avocats",
+      "kind": "fruit",
+      "category": "fruits_legumes"
+    },
+    {
+      "name": "raisin",
+      "kind": "fruit",
+      "category": "fruits_legumes"
+    },
+    {
+      "name": "papier toilette",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "dentifrice",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "dentifrice enfants",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "shampoing",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "gel douche",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "déodorant",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "coton-tiges",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "cotons démaquillants",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "brosses à dents",
+      "kind": "maison",
+      "category": "hygiene"
+    },
+    {
+      "name": "essuie-tout",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "pastilles lave-vaisselle",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "sel lave-vaisselle",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "liquide de rinçage",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "liquide vaisselle",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "éponges",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "lessive",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "assouplissant",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "papier aluminium",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "film alimentaire",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "sacs congélation",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "sacs poubelle",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "gel WC",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "nettoyant multi-usage",
+      "kind": "maison",
+      "category": "entretien"
+    },
+    {
+      "name": "croquettes chat",
+      "kind": "maison",
+      "category": "animaux"
+    },
+    {
+      "name": "litière",
+      "kind": "maison",
+      "category": "animaux"
+    }
+  ]
+}

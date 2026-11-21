@@ -1,0 +1,30 @@
+from abc import ABC, abstractmethod
+
+from pydantic import BaseModel, Field
+
+from src.domain.entities import RecipeContent
+
+
+class GenerationContext(BaseModel):
+    members: list[str]
+    member: str | None = None
+    quick: bool = False
+    available_ingredients: list[str] = Field(default_factory=list)
+    expiring_ingredients: list[str] = Field(default_factory=list)
+    household_notes: list[str] = Field(default_factory=list)
+    existing_titles: list[str] = Field(default_factory=list)
+
+
+class RecipeGenerator(ABC):
+    @abstractmethod
+    async def create(self, request: str, context: GenerationContext) -> RecipeContent:
+        pass
+
+    @abstractmethod
+    async def rework(
+        self,
+        recipe: RecipeContent,
+        instruction: str,
+        context: GenerationContext,
+    ) -> RecipeContent:
+        pass

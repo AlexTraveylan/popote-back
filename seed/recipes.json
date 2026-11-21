@@ -1,0 +1,2440 @@
+{
+  "recipes": [
+    {
+      "title": "Saumon en papillote à la crème, riz et épinards",
+      "summary": "Le classique express du jeudi soir.",
+      "servings": 4,
+      "prep_minutes": 25,
+      "tags": [
+        "rapide",
+        "poisson"
+      ],
+      "ingredients": [
+        {
+          "name": "pavés de saumon",
+          "quantity": 500.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "crème fraîche",
+          "quantity": 15.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "épinards",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "citron",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": true
+        },
+        {
+          "name": "sel",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        },
+        {
+          "name": "poivre",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Lancer le riz.",
+        "Poser chaque pavé sur du papier cuisson, napper de crème, saler, poivrer, un trait de citron.",
+        "Fermer les papillotes et cuire 15 min à 200 °C.",
+        "Faire tomber les épinards à la poêle 5 min.",
+        "Servir avec le riz."
+      ]
+    },
+    {
+      "title": "Pâtes ratatouille et lardons",
+      "summary": "Ratatouille express et lardons rissolés.",
+      "servings": 4,
+      "prep_minutes": 25,
+      "tags": [
+        "rapide"
+      ],
+      "ingredients": [
+        {
+          "name": "pâtes",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "ratatouille",
+          "quantity": 650.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "lardons",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "parmesan",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire les pâtes.",
+        "Faire dorer les lardons à sec.",
+        "Ajouter la ratatouille et réchauffer 5 min.",
+        "Mélanger avec les pâtes, parsemer de parmesan."
+      ]
+    },
+    {
+      "title": "Sauté de bœuf mariné au soja, aubergines et riz",
+      "summary": "Bœuf mariné soja-ail, aubergines fondantes.",
+      "servings": 4,
+      "prep_minutes": 30,
+      "tags": [
+        "rapide"
+      ],
+      "ingredients": [
+        {
+          "name": "bœuf",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "aubergines",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "sauce soja",
+          "quantity": 4.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 2.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "gingembre",
+          "quantity": 1.0,
+          "unit": "c. à c.",
+          "optional": true
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Émincer le bœuf et le mariner dans la sauce soja et l'ail (le matin si possible).",
+        "Lancer le riz.",
+        "Couper les aubergines en dés et les dorer 10 min à l'huile.",
+        "Saisir le bœuf 3 min à feu vif, ajouter les aubergines et la marinade.",
+        "Servir sur le riz."
+      ]
+    },
+    {
+      "title": "Pâtes à la crème, champignons et lardons",
+      "summary": "Beaucoup de champignons, peu de lardons.",
+      "servings": 4,
+      "prep_minutes": 20,
+      "tags": [
+        "rapide"
+      ],
+      "ingredients": [
+        {
+          "name": "pâtes",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "champignons",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "lardons",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "crème fraîche",
+          "quantity": 20.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "parmesan",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": true
+        },
+        {
+          "name": "poivre",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire les pâtes.",
+        "Faire revenir l'oignon et les lardons.",
+        "Ajouter les champignons émincés, cuire 8 min.",
+        "Verser la crème, poivrer, mélanger aux pâtes."
+      ]
+    },
+    {
+      "title": "Colin à l'eau, légumes vapeur et aïoli",
+      "summary": "Le poisson poché que tout le monde aime, mayo pour les enfants.",
+      "servings": 4,
+      "prep_minutes": 25,
+      "tags": [
+        "rapide",
+        "poisson",
+        "leger"
+      ],
+      "ingredients": [
+        {
+          "name": "colin",
+          "quantity": 600.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "pommes de terre",
+          "quantity": 800.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "brocoli",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": 4.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 1.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "citron",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire pommes de terre et carottes à la vapeur 20 min, le brocoli les 8 dernières minutes.",
+        "Pocher le colin 8 min dans l'eau frémissante salée.",
+        "Aïoli express : mayonnaise, ail râpé, jus de citron.",
+        "Servir mayo pour les enfants, aïoli pour les grands."
+      ]
+    },
+    {
+      "title": "Omelette aux épinards",
+      "summary": "Dîner végétarien en 15 minutes.",
+      "servings": 4,
+      "prep_minutes": 15,
+      "tags": [
+        "rapide",
+        "vegetarien",
+        "leger"
+      ],
+      "ingredients": [
+        {
+          "name": "œufs",
+          "quantity": 8.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "épinards",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "gruyère",
+          "quantity": 60.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sel",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        },
+        {
+          "name": "poivre",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Faire tomber les épinards à la poêle.",
+        "Battre les œufs, saler, poivrer, ajouter le gruyère.",
+        "Verser sur les épinards, cuire à couvert 6 min."
+      ]
+    },
+    {
+      "title": "Pâtes sauce tomate, épinards et ricotta",
+      "summary": "Une sauce tomate verte et crémeuse sans viande.",
+      "servings": 4,
+      "prep_minutes": 25,
+      "tags": [
+        "rapide",
+        "vegetarien"
+      ],
+      "ingredients": [
+        {
+          "name": "pâtes",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "purée de tomates",
+          "quantity": 500.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "épinards",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "ricotta",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 1.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire les pâtes.",
+        "Faire revenir l'ail, ajouter la purée de tomates, mijoter 10 min.",
+        "Ajouter les épinards, puis la ricotta hors du feu.",
+        "Mélanger avec les pâtes."
+      ]
+    },
+    {
+      "title": "Wraps au poulet",
+      "summary": "Wraps à garnir à table.",
+      "servings": 4,
+      "prep_minutes": 20,
+      "tags": [
+        "rapide",
+        "enfants"
+      ],
+      "ingredients": [
+        {
+          "name": "wraps",
+          "quantity": 8.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "filets de poulet",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "tomates cerises",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "salade",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": 3.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Émincer et dorer le poulet 8 min.",
+        "Couper les tomates cerises, laver la salade.",
+        "Chacun garnit son wrap."
+      ]
+    },
+    {
+      "title": "Salade d'endives, pomme, noix et comté, knackis",
+      "summary": "Salade pour les grands, knackis pour les enfants.",
+      "servings": 4,
+      "prep_minutes": 15,
+      "tags": [
+        "rapide",
+        "leger"
+      ],
+      "ingredients": [
+        {
+          "name": "endives",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "pommes",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "noix",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "comté",
+          "quantity": 80.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "knackis",
+          "quantity": 8.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "moutarde",
+          "quantity": 1.0,
+          "unit": "c. à c.",
+          "optional": true
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Émincer les endives, couper la pomme et le comté en dés.",
+        "Vinaigrette moutarde, ajouter les noix.",
+        "Réchauffer les knackis 5 min dans l'eau frémissante."
+      ]
+    },
+    {
+      "title": "Tarte tomate chèvre",
+      "summary": "Pâte feuilletée, moutarde, tomates et chèvre.",
+      "servings": 4,
+      "prep_minutes": 35,
+      "tags": [],
+      "ingredients": [
+        {
+          "name": "pâte feuilletée",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "tomates",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "bûche de chèvre",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "moutarde",
+          "quantity": 1.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "jambon cru",
+          "quantity": 4.0,
+          "unit": "tranche",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Étaler la pâte, badigeonner de moutarde.",
+        "Disposer tomates et rondelles de chèvre, jambon cru si on veut.",
+        "Cuire 25 min à 200 °C."
+      ]
+    },
+    {
+      "title": "Quiche lardons",
+      "summary": "La quiche familiale avec une salade.",
+      "servings": 4,
+      "prep_minutes": 45,
+      "tags": [],
+      "ingredients": [
+        {
+          "name": "pâte feuilletée",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "lardons",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "crème fraîche",
+          "quantity": 20.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "lait",
+          "quantity": 20.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "gruyère",
+          "quantity": 60.0,
+          "unit": "g",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Dorer les lardons.",
+        "Battre œufs, crème, lait, ajouter les lardons et le gruyère.",
+        "Verser sur la pâte, cuire 35 min à 190 °C."
+      ]
+    },
+    {
+      "title": "Pizza maison jambon-champignons",
+      "summary": "Pizza du samedi soir.",
+      "servings": 4,
+      "prep_minutes": 30,
+      "tags": [
+        "enfants"
+      ],
+      "ingredients": [
+        {
+          "name": "pâte à pizza",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "purée de tomates",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "jambon blanc",
+          "quantity": 4.0,
+          "unit": "tranche",
+          "optional": false
+        },
+        {
+          "name": "champignons",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "mozzarella",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        }
+      ],
+      "steps": [
+        "Étaler la pâte, napper de tomate.",
+        "Ajouter jambon, champignons émincés, mozzarella.",
+        "Cuire 15 min à 240 °C."
+      ]
+    },
+    {
+      "title": "Lomo saltado",
+      "summary": "Le sauté péruvien bœuf, oignon rouge, tomate et frites.",
+      "servings": 4,
+      "prep_minutes": 30,
+      "tags": [
+        "rapide",
+        "peruvien"
+      ],
+      "ingredients": [
+        {
+          "name": "bœuf",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "oignons rouges",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "tomates",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "sauce soja",
+          "quantity": 3.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "vinaigre",
+          "quantity": 1.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 2.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "pommes de terre",
+          "quantity": 600.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "coriandre",
+          "quantity": 1.0,
+          "unit": "botte",
+          "optional": true
+        },
+        {
+          "name": "pâte d'ají amarillo",
+          "quantity": 1.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Couper les pommes de terre en frites et les cuire au four 25 min à 220 °C.",
+        "Lancer le riz.",
+        "Saisir le bœuf en lanières à feu très vif, réserver.",
+        "Sauter oignon rouge et tomates en quartiers 2 min, ajouter ail, soja, vinaigre, ají.",
+        "Remettre le bœuf, mélanger avec les frites, coriandre."
+      ]
+    },
+    {
+      "title": "Saltado d'aubergine",
+      "summary": "La version végétarienne du saltado, aubergine à la place du bœuf.",
+      "servings": 4,
+      "prep_minutes": 30,
+      "tags": [
+        "rapide",
+        "peruvien",
+        "vegetarien"
+      ],
+      "ingredients": [
+        {
+          "name": "aubergines",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "oignons rouges",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "tomates",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "sauce soja",
+          "quantity": 3.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 2.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "coriandre",
+          "quantity": 1.0,
+          "unit": "botte",
+          "optional": true
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Lancer le riz.",
+        "Dorer l'aubergine en bâtonnets à feu vif.",
+        "Ajouter oignon rouge, tomates, ail et soja, sauter 3 min.",
+        "Servir avec le riz et la coriandre."
+      ]
+    },
+    {
+      "title": "Soupe poireaux, carottes, pommes de terre",
+      "summary": "Soupe du soir avec tartines au comté.",
+      "servings": 4,
+      "prep_minutes": 40,
+      "tags": [
+        "vegetarien",
+        "leger",
+        "saison"
+      ],
+      "ingredients": [
+        {
+          "name": "poireaux",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "pommes de terre",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "comté",
+          "quantity": 60.0,
+          "unit": "g",
+          "optional": true
+        },
+        {
+          "name": "pain de mie",
+          "quantity": 4.0,
+          "unit": "tranche",
+          "optional": true
+        },
+        {
+          "name": "sel",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Émincer les légumes, les faire suer 5 min.",
+        "Couvrir d'eau, cuire 25 min, mixer.",
+        "Servir avec des tartines grillées au comté."
+      ]
+    },
+    {
+      "title": "Velouté de potimarron",
+      "summary": "Velouté doux, sans éplucher le potimarron.",
+      "servings": 4,
+      "prep_minutes": 35,
+      "tags": [
+        "vegetarien",
+        "leger",
+        "saison"
+      ],
+      "ingredients": [
+        {
+          "name": "potimarron",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "crème fraîche",
+          "quantity": 10.0,
+          "unit": "cl",
+          "optional": true
+        },
+        {
+          "name": "pain de mie",
+          "quantity": 4.0,
+          "unit": "tranche",
+          "optional": true
+        },
+        {
+          "name": "sel",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Couper le potimarron (avec la peau) et l'oignon.",
+        "Couvrir d'eau, cuire 25 min, mixer avec la crème."
+      ]
+    },
+    {
+      "title": "Purée de patate douce, œuf poêlé, champignons et noix",
+      "summary": "Assiette végétarienne de saison.",
+      "servings": 4,
+      "prep_minutes": 35,
+      "tags": [
+        "vegetarien",
+        "saison"
+      ],
+      "ingredients": [
+        {
+          "name": "patates douces",
+          "quantity": 800.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "champignons",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "noix",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "beurre",
+          "quantity": 20.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sel",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire les patates douces 20 min, écraser avec le beurre.",
+        "Poêler les champignons.",
+        "Cuire les œufs au plat.",
+        "Dresser avec les noix concassées."
+      ]
+    },
+    {
+      "title": "Gratin de légumes verts, graines et feta",
+      "summary": "Brocoli, courgettes, poireaux gratinés.",
+      "servings": 4,
+      "prep_minutes": 50,
+      "tags": [
+        "vegetarien",
+        "saison"
+      ],
+      "ingredients": [
+        {
+          "name": "brocoli",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "courgettes",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "poireaux",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "feta",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "crème fraîche",
+          "quantity": 20.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "graines",
+          "quantity": 3.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Précuire les légumes 8 min à la vapeur.",
+        "Mettre dans un plat, napper de crème, émietter la feta, parsemer de graines.",
+        "Gratiner 25 min à 200 °C."
+      ]
+    },
+    {
+      "title": "Butternut, quinoa et feta",
+      "summary": "Butternut rôtie, quinoa, feta, raisins secs et amandes.",
+      "servings": 4,
+      "prep_minutes": 45,
+      "tags": [
+        "vegetarien",
+        "saison"
+      ],
+      "ingredients": [
+        {
+          "name": "butternut",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "quinoa",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "feta",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "raisins secs",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": true
+        },
+        {
+          "name": "amandes",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": true
+        },
+        {
+          "name": "coriandre",
+          "quantity": 1.0,
+          "unit": "botte",
+          "optional": true
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Rôtir la butternut en cubes 30 min à 200 °C.",
+        "Cuire le quinoa.",
+        "Mélanger avec l'oignon revenu, la feta, raisins et amandes."
+      ]
+    },
+    {
+      "title": "Lasagnes bolognaise",
+      "summary": "Béchamel maison, carottes cachées dans la sauce.",
+      "servings": 4,
+      "prep_minutes": 90,
+      "tags": [
+        "mijote",
+        "a_congeler"
+      ],
+      "ingredients": [
+        {
+          "name": "pâtes à lasagnes",
+          "quantity": 500.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "viande hachée",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 1.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "purée de tomates",
+          "quantity": 680.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "lait",
+          "quantity": 75.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "beurre",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "farine",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "muscade",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        },
+        {
+          "name": "mozzarella",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "parmesan",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Bolognaise : oignon, ail, carottes râpées, viande, purée de tomates, mijoter 30 min.",
+        "Béchamel : beurre, farine, lait, muscade.",
+        "Monter en couches pâtes, bolognaise, béchamel.",
+        "Mozzarella et parmesan sur le dessus, cuire 40 min à 180 °C.",
+        "Congeler 2 portions."
+      ]
+    },
+    {
+      "title": "Rôti d'échine, légumes rôtis et houmous",
+      "summary": "Le rôti du week-end avec 4 à 5 légumes de saison au four.",
+      "servings": 4,
+      "prep_minutes": 120,
+      "tags": [
+        "mijote",
+        "saison",
+        "a_congeler"
+      ],
+      "ingredients": [
+        {
+          "name": "rôti d'échine de porc",
+          "quantity": 700.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "patates douces",
+          "quantity": 500.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "panais",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "potimarron",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "betteraves",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": true
+        },
+        {
+          "name": "oignons",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "pois chiches",
+          "quantity": 265.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "citron",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 2.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Rôti au four 1 h 30 à 170 °C avec ail et oignons.",
+        "Légumes en gros morceaux sur une plaque, huile, sel, 45 min à 200 °C.",
+        "Houmous : pois chiches, citron, ail, huile d'olive, mixer.",
+        "Congeler 2 portions pour les midis."
+      ]
+    },
+    {
+      "title": "Guiso de pollo",
+      "summary": "Ragoût de poulet péruvien aux légumes.",
+      "servings": 4,
+      "prep_minutes": 90,
+      "tags": [
+        "mijote",
+        "peruvien",
+        "a_congeler"
+      ],
+      "ingredients": [
+        {
+          "name": "cuisses de poulet",
+          "quantity": 1.0,
+          "unit": "kg",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "tomates",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "petits pois",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "poivrons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "purée de tomates",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 2.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "cumin",
+          "quantity": 1.0,
+          "unit": "c. à c.",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "pâte d'ají amarillo",
+          "quantity": 1.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Dorer le poulet, réserver.",
+        "Revenir oignon, ail, poivron, cumin, ají.",
+        "Ajouter tomates, purée, carottes, le poulet, couvrir d'eau, mijoter 45 min.",
+        "Petits pois les 10 dernières minutes. Servir avec du riz."
+      ]
+    },
+    {
+      "title": "Ají de gallina",
+      "summary": "Poulet effiloché, sauce crémeuse à l'ají amarillo.",
+      "servings": 4,
+      "prep_minutes": 120,
+      "tags": [
+        "mijote",
+        "peruvien",
+        "a_congeler"
+      ],
+      "ingredients": [
+        {
+          "name": "cuisses de poulet",
+          "quantity": 1.0,
+          "unit": "kg",
+          "optional": false
+        },
+        {
+          "name": "pâte d'ají amarillo",
+          "quantity": 3.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "pain de mie",
+          "quantity": 4.0,
+          "unit": "tranche",
+          "optional": false
+        },
+        {
+          "name": "lait",
+          "quantity": 30.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "parmesan",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "noix",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 2.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "pommes de terre",
+          "quantity": 600.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "olives noires",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Pocher le poulet 40 min avec oignon et carotte, garder le bouillon, effilocher.",
+        "Mixer pain de mie trempé dans le lait, noix, parmesan.",
+        "Revenir oignon, ail, ají ; ajouter la crème de pain, du bouillon, puis le poulet.",
+        "Servir avec riz, pommes de terre, œufs durs et olives.",
+        "Congeler 2 portions."
+      ]
+    },
+    {
+      "title": "Seco de res",
+      "summary": "Bœuf braisé à la coriandre, façon péruvienne.",
+      "servings": 4,
+      "prep_minutes": 150,
+      "tags": [
+        "mijote",
+        "peruvien",
+        "a_congeler"
+      ],
+      "ingredients": [
+        {
+          "name": "bœuf à braiser",
+          "quantity": 800.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "coriandre",
+          "quantity": 2.0,
+          "unit": "botte",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 3.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "pâte d'ají amarillo",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "petits pois",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "haricots blancs",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Mixer la coriandre avec un peu d'eau.",
+        "Dorer le bœuf en morceaux, réserver.",
+        "Revenir oignons, ail, ají, ajouter la coriandre mixée et le bœuf, couvrir d'eau.",
+        "Mijoter 1 h 45, carottes et petits pois la dernière demi-heure.",
+        "Servir avec riz et haricots."
+      ]
+    },
+    {
+      "title": "Sopita de pollo",
+      "summary": "Soupe de poulet péruvienne aux vermicelles.",
+      "servings": 4,
+      "prep_minutes": 90,
+      "tags": [
+        "peruvien",
+        "leger"
+      ],
+      "ingredients": [
+        {
+          "name": "cuisses de poulet",
+          "quantity": 800.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "pommes de terre",
+          "quantity": 500.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "céleri",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "cheveux d'ange",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "coriandre",
+          "quantity": 1.0,
+          "unit": "botte",
+          "optional": true
+        },
+        {
+          "name": "citron vert",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Pocher le poulet 40 min avec céleri et carottes.",
+        "Effilocher, remettre dans le bouillon avec les pommes de terre en dés, 15 min.",
+        "Ajouter les vermicelles 4 min.",
+        "Coriandre et citron vert au service."
+      ]
+    },
+    {
+      "title": "Causa limeña au thon",
+      "summary": "Purée de pommes de terre à l'ají et au citron vert, farcie au thon.",
+      "servings": 4,
+      "prep_minutes": 60,
+      "tags": [
+        "peruvien"
+      ],
+      "ingredients": [
+        {
+          "name": "pommes de terre",
+          "quantity": 1.0,
+          "unit": "kg",
+          "optional": false
+        },
+        {
+          "name": "pâte d'ají amarillo",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "citron vert",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "thon",
+          "quantity": 280.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": 4.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "avocats",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": true
+        },
+        {
+          "name": "olives noires",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": true
+        },
+        {
+          "name": "huile d'olive",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire et écraser les pommes de terre avec ají, citron vert, huile, sel.",
+        "Mélanger thon et mayonnaise.",
+        "Monter en couches : purée, thon, avocat, purée.",
+        "Décorer d'œufs durs et d'olives, servir frais."
+      ]
+    },
+    {
+      "title": "Guiso de carne",
+      "summary": "Ragoût de bœuf aux légumes, pommes de terre et petits pois.",
+      "servings": 4,
+      "prep_minutes": 150,
+      "tags": [
+        "mijote",
+        "peruvien",
+        "a_congeler"
+      ],
+      "ingredients": [
+        {
+          "name": "bœuf à braiser",
+          "quantity": 800.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "pommes de terre",
+          "quantity": 600.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "petits pois",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "tomates",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "ail",
+          "quantity": 2.0,
+          "unit": "gousse",
+          "optional": false
+        },
+        {
+          "name": "cumin",
+          "quantity": 1.0,
+          "unit": "c. à c.",
+          "optional": false
+        }
+      ],
+      "steps": [
+        "Dorer le bœuf.",
+        "Revenir oignons, ail, cumin, tomates.",
+        "Remettre le bœuf, couvrir d'eau, mijoter 1 h 30.",
+        "Ajouter pommes de terre, carottes, petits pois, 30 min de plus."
+      ]
+    },
+    {
+      "title": "Arroz tapado au thon",
+      "summary": "Riz « couvert » péruvien, farce thon, petits pois, olives.",
+      "servings": 4,
+      "prep_minutes": 60,
+      "tags": [
+        "peruvien"
+      ],
+      "ingredients": [
+        {
+          "name": "riz basmati",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "thon",
+          "quantity": 280.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "petits pois",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "purée de tomates",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "olives noires",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire le riz.",
+        "Farce : oignon, carottes en dés, petits pois, purée de tomates, thon, olives.",
+        "Dans un bol : riz, farce, riz, tasser et démouler sur l'assiette."
+      ]
+    },
+    {
+      "title": "Raclette",
+      "summary": "Pour les jours d'invités.",
+      "servings": 6,
+      "prep_minutes": 30,
+      "tags": [
+        "invites"
+      ],
+      "ingredients": [
+        {
+          "name": "pommes de terre",
+          "quantity": 1.5,
+          "unit": "kg",
+          "optional": false
+        },
+        {
+          "name": "fromage à raclette",
+          "quantity": 800.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "charcuterie",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "cornichons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": true
+        },
+        {
+          "name": "salade",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cuire les pommes de terre en robe des champs 25 min.",
+        "Disposer fromage, charcuterie, cornichons, salade."
+      ]
+    },
+    {
+      "title": "Gratin de chou-fleur et rouelle de porc",
+      "summary": "Rouelle au four et gratin de chou-fleur.",
+      "servings": 4,
+      "prep_minutes": 120,
+      "tags": [
+        "mijote",
+        "saison"
+      ],
+      "ingredients": [
+        {
+          "name": "rouelle de porc",
+          "quantity": 1.0,
+          "unit": "kg",
+          "optional": false
+        },
+        {
+          "name": "chou-fleur",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "lait",
+          "quantity": 50.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "farine",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "beurre",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "gruyère",
+          "quantity": 100.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "muscade",
+          "quantity": null,
+          "unit": null,
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Rouelle au four 1 h 30 à 170 °C avec un fond d'eau.",
+        "Précuire le chou-fleur 10 min.",
+        "Béchamel, napper le chou-fleur, gruyère, 25 min à 200 °C."
+      ]
+    },
+    {
+      "title": "Couscous",
+      "summary": "Couscous du dimanche, légumes et merguez.",
+      "servings": 4,
+      "prep_minutes": 120,
+      "tags": [
+        "mijote"
+      ],
+      "ingredients": [
+        {
+          "name": "semoule",
+          "quantity": 500.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "courgettes",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "navets",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "tomates",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "pois chiches",
+          "quantity": 265.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "raisins secs",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": true
+        },
+        {
+          "name": "épices couscous",
+          "quantity": 2.0,
+          "unit": "c. à s.",
+          "optional": false
+        },
+        {
+          "name": "merguez",
+          "quantity": 6.0,
+          "unit": "piece",
+          "optional": false
+        }
+      ],
+      "steps": [
+        "Bouillon : légumes, tomates, épices, pois chiches, 1 h.",
+        "Griller les merguez.",
+        "Préparer la semoule.",
+        "Servir avec raisins secs."
+      ]
+    },
+    {
+      "title": "Poulet coco au curry",
+      "summary": "Poulet mariné au yaourt, sauce coco et noix de cajou.",
+      "servings": 4,
+      "prep_minutes": 45,
+      "tags": [],
+      "ingredients": [
+        {
+          "name": "filets de poulet",
+          "quantity": 600.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "lait de coco",
+          "quantity": 40.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "yaourt grec",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "curry",
+          "quantity": 2.0,
+          "unit": "c. à c.",
+          "optional": false
+        },
+        {
+          "name": "noix de cajou",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": true
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "coriandre",
+          "quantity": 1.0,
+          "unit": "botte",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Mariner le poulet dans yaourt et curry.",
+        "Dorer, ajouter le lait de coco, mijoter 20 min.",
+        "Servir avec riz, cajou et coriandre."
+      ]
+    },
+    {
+      "title": "Poulet à la crème et aux champignons",
+      "summary": "Le plat familial du midi.",
+      "servings": 4,
+      "prep_minutes": 35,
+      "tags": [],
+      "ingredients": [
+        {
+          "name": "filets de poulet",
+          "quantity": 600.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "crème fraîche",
+          "quantity": 20.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "champignons",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        }
+      ],
+      "steps": [
+        "Dorer le poulet en morceaux.",
+        "Ajouter oignon et champignons, 10 min.",
+        "Crème, mijoter 10 min, servir avec le riz."
+      ]
+    },
+    {
+      "title": "Hachis parmentier aux légumes",
+      "summary": "Purée maison, viande et légumes cachés.",
+      "servings": 4,
+      "prep_minutes": 75,
+      "tags": [
+        "a_congeler"
+      ],
+      "ingredients": [
+        {
+          "name": "pommes de terre",
+          "quantity": 1.0,
+          "unit": "kg",
+          "optional": false
+        },
+        {
+          "name": "viande hachée",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "navets",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": true
+        },
+        {
+          "name": "oignons",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "purée de tomates",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "lait",
+          "quantity": 20.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "beurre",
+          "quantity": 40.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "gruyère",
+          "quantity": 60.0,
+          "unit": "g",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Purée : pommes de terre, beurre, lait.",
+        "Revenir oignons, carottes, viande, purée de tomates.",
+        "Monter le hachis, gruyère, 25 min à 200 °C."
+      ]
+    },
+    {
+      "title": "Chili sin carne",
+      "summary": "Haricots rouges, maïs, carottes, avocat.",
+      "servings": 4,
+      "prep_minutes": 45,
+      "tags": [
+        "vegetarien"
+      ],
+      "ingredients": [
+        {
+          "name": "haricots rouges",
+          "quantity": 500.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "carottes",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "maïs",
+          "quantity": 140.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "oignons",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "purée de tomates",
+          "quantity": 400.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "cumin",
+          "quantity": 1.0,
+          "unit": "c. à c.",
+          "optional": false
+        },
+        {
+          "name": "avocats",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": true
+        },
+        {
+          "name": "riz basmati",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        }
+      ],
+      "steps": [
+        "Revenir oignon et carottes, cumin.",
+        "Ajouter purée de tomates, haricots, maïs, mijoter 25 min.",
+        "Servir avec riz et avocat."
+      ]
+    },
+    {
+      "title": "Gâteau au yaourt pommes-cannelle",
+      "summary": "Le gâteau du week-end, se double facilement.",
+      "servings": 8,
+      "prep_minutes": 50,
+      "tags": [
+        "dessert",
+        "enfants"
+      ],
+      "ingredients": [
+        {
+          "name": "yaourt nature",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "farine",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sucre",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "huile neutre",
+          "quantity": 10.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "levure chimique",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "pommes",
+          "quantity": 2.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "cannelle",
+          "quantity": 1.0,
+          "unit": "c. à c.",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Mélanger yaourt, sucre, œufs, huile, farine, levure.",
+        "Ajouter les pommes en dés et la cannelle.",
+        "Cuire 35 min à 180 °C."
+      ]
+    },
+    {
+      "title": "Gâteau au chocolat",
+      "summary": "Fondant et simple.",
+      "servings": 8,
+      "prep_minutes": 45,
+      "tags": [
+        "dessert",
+        "enfants"
+      ],
+      "ingredients": [
+        {
+          "name": "chocolat noir",
+          "quantity": 200.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "beurre",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sucre",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "farine",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": false
+        }
+      ],
+      "steps": [
+        "Fondre chocolat et beurre.",
+        "Ajouter sucre, œufs, farine.",
+        "Cuire 25 min à 180 °C."
+      ]
+    },
+    {
+      "title": "Carrot cake",
+      "summary": "Carottes, noix, cannelle, glaçage au fromage frais.",
+      "servings": 8,
+      "prep_minutes": 70,
+      "tags": [
+        "dessert"
+      ],
+      "ingredients": [
+        {
+          "name": "carottes",
+          "quantity": 300.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "farine",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sucre",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "huile neutre",
+          "quantity": 15.0,
+          "unit": "cl",
+          "optional": false
+        },
+        {
+          "name": "noix",
+          "quantity": 80.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "cannelle",
+          "quantity": 1.0,
+          "unit": "c. à c.",
+          "optional": false
+        },
+        {
+          "name": "levure chimique",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "philadelphia",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sucre glace",
+          "quantity": 50.0,
+          "unit": "g",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Râper les carottes.",
+        "Mélanger œufs, sucre, huile, farine, levure, cannelle, carottes, noix.",
+        "Cuire 45 min à 170 °C.",
+        "Glaçage : Philadelphia et sucre glace."
+      ]
+    },
+    {
+      "title": "Crumble pommes-poires",
+      "summary": "Fruits fondants, pâte croustillante.",
+      "servings": 6,
+      "prep_minutes": 50,
+      "tags": [
+        "dessert",
+        "saison"
+      ],
+      "ingredients": [
+        {
+          "name": "pommes",
+          "quantity": 4.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "poires",
+          "quantity": 3.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "farine",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "beurre",
+          "quantity": 100.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sucre",
+          "quantity": 100.0,
+          "unit": "g",
+          "optional": false
+        }
+      ],
+      "steps": [
+        "Couper les fruits dans un plat.",
+        "Sabler farine, beurre, sucre.",
+        "Couvrir les fruits, cuire 35 min à 180 °C."
+      ]
+    },
+    {
+      "title": "Sablés spritz",
+      "summary": "Petits biscuits pour les goûters.",
+      "servings": 8,
+      "prep_minutes": 40,
+      "tags": [
+        "dessert",
+        "enfants"
+      ],
+      "ingredients": [
+        {
+          "name": "farine",
+          "quantity": 250.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "beurre",
+          "quantity": 150.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "sucre",
+          "quantity": 100.0,
+          "unit": "g",
+          "optional": false
+        },
+        {
+          "name": "œufs",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": false
+        },
+        {
+          "name": "sucre vanillé",
+          "quantity": 1.0,
+          "unit": "piece",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Crémer beurre et sucre, ajouter œuf, vanille, farine.",
+        "Pocher à la douille sur la plaque.",
+        "Cuire 12 min à 180 °C."
+      ]
+    }
+  ]
+}
