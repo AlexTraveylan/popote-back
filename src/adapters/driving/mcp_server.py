@@ -45,6 +45,7 @@ class RecipeOverview(BaseModel):
     seasons: list[Season]
     cooks: list[str]
     fans: list[str]
+    dislikes: list[str]
     ingredients: list[str]
 
 
@@ -64,6 +65,7 @@ def _overview(recipe: Recipe) -> RecipeOverview:
         seasons=recipe.seasons,
         cooks=recipe.cooks,
         fans=recipe.fans,
+        dislikes=recipe.dislikes,
         ingredients=[ingredient.name for ingredient in recipe.ingredients],
     )
 

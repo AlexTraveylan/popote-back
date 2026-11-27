@@ -13,6 +13,8 @@ class GenerationContext(BaseModel):
     available_ingredients: list[str] = Field(default_factory=list)
     expiring_ingredients: list[str] = Field(default_factory=list)
     household_notes: list[str] = Field(default_factory=list)
+    member_tastes: list[str] = Field(default_factory=list)
+    stock_only: bool = False
     existing_titles: list[str] = Field(default_factory=list)
 
 

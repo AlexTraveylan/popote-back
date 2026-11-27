@@ -1,9 +1,16 @@
 from uuid import UUID
 
+from pydantic import BaseModel
+
 from src.domain.entities import Recipe, RecipeContent, RecipeSource, RecipeTag, Season
 from src.domain.errors import NotFoundError
 from src.domain.household import Household
 from src.domain.ports import RecipeRepository
+
+
+class PreferenceOutcome(BaseModel):
+    recipe: Recipe
+    deleted: bool
 
 
 class RecipeService:
@@ -76,11 +83,15 @@ class RecipeService:
         member: str,
         can_cook: bool | None,
         likes: bool | None,
-    ) -> Recipe:
+        dislikes: bool | None = None,
+    ) -> PreferenceOutcome:
         recipe = await self.get(recipe_id)
-        recipe.set_preference(self._household.ensure_member(member), can_cook, likes)
+        recipe.set_preference(self._household.ensure_member(member), can_cook, likes, dislikes)
+        if recipe.is_disliked_by_all(self._household.members):
+            await self._repository.delete(recipe.id)
+            return PreferenceOutcome(recipe=recipe, deleted=True)
         await self._repository.save(recipe)
-        return recipe
+        return PreferenceOutcome(recipe=recipe, deleted=False)
 
     async def delete(self, recipe_id: UUID) -> None:
         await self.get(recipe_id)

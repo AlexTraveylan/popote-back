@@ -91,6 +91,7 @@ class MemberTaste(BaseModel):
     member: str
     can_cook: list[str]
     likes: list[str]
+    dislikes: list[str]
 
 
 class TripSummary(BaseModel):
@@ -226,6 +227,7 @@ def _member_tastes(members: list[str], recipes: list[Recipe]) -> list[MemberTast
             member=member,
             can_cook=sorted(recipe.title for recipe in recipes if member in recipe.cooks),
             likes=sorted(recipe.title for recipe in recipes if member in recipe.fans),
+            dislikes=sorted(recipe.title for recipe in recipes if member in recipe.dislikes),
         )
         for member in members
     ]

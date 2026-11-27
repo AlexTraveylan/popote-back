@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — 2026-11-27
+
+- « J'aime pas » par membre (`Recipe.dislikes`), exclusif avec « j'aime » ; la recette est supprimée quand tous les
+  membres n'aiment pas. `PUT /recipes/{id}/preferences` renvoie `{recipe, deleted}`.
+- Suggestions : cache les recettes que le membre n'aime pas, filtre `liked` (remplace `mine`), plus de bonus « sait la faire ».
+- `availability.cookable` : tous les ingrédients requis sont à la maison.
+- « J'ai cuisiné » ne décompte plus que la famille cuisine ; les basiques restent manuels.
+- Génération : demande facultative, `stock_only` (rien à acheter) et goûts des membres dans le contexte.
+
 ## 0.2.0 — 2026-11-21
 
 - Saisons des recettes (`seasons` : printemps, été, automne, hiver, plusieurs possibles ; vide = toute l'année),

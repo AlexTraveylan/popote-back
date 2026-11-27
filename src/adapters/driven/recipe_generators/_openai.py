@@ -50,6 +50,14 @@ def _describe_context(context: GenerationContext) -> str:
         lines.append(f"Ingrédients disponibles à utiliser en priorité : {', '.join(context.available_ingredients)}.")
     if context.expiring_ingredients:
         lines.append(f"À utiliser d'urgence (bientôt périmés) : {', '.join(context.expiring_ingredients)}.")
+    if context.stock_only:
+        lines.append(
+            "Contrainte forte : n'utilise que les ingrédients disponibles listés, "
+            "plus sel, poivre, huile et épices courantes. Rien d'autre à acheter."
+        )
+    if context.member_tastes:
+        lines.append("Goûts connus (à respecter, sans refaire ces recettes) :")
+        lines.extend(f"- {taste}" for taste in context.member_tastes)
     if context.household_notes:
         lines.append("Préférences du foyer :")
         lines.extend(f"- {note}" for note in context.household_notes)

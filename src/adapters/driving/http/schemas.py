@@ -30,13 +30,15 @@ class RecipePreferenceRequest(BaseModel):
     member: str
     can_cook: bool | None = None
     likes: bool | None = None
+    dislikes: bool | None = None
 
 
 class NewRecipeDraftRequest(BaseModel):
-    request: str = Field(min_length=3)
+    request: str = ""
     member: str | None = None
     quick: bool = False
     use_stock: bool = True
+    stock_only: bool = False
     season: Season | None = None
 
 

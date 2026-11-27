@@ -65,7 +65,8 @@ class TestHttpApi:
         mine = client.get("/api/recipes", params={"member": "Sam"}).json()
 
         # Then
-        assert updated.json()["fans"] == ["Sam"]
+        assert updated.json()["recipe"]["fans"] == ["Sam"]
+        assert not updated.json()["deleted"]
         assert [current["title"] for current in mine] == ["Causa"]
 
     def test_running_low_flag_feeds_shopping_context(self, client: TestClient) -> None:

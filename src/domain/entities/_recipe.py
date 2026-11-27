@@ -80,6 +80,7 @@ class Recipe(RecipeContent):
     id: UUID = Field(default_factory=uuid4)
     cooks: list[str] = Field(default_factory=list)
     fans: list[str] = Field(default_factory=list)
+    dislikes: list[str] = Field(default_factory=list)
     source: RecipeSource = RecipeSource.MANUAL
     created_at: datetime = Field(default_factory=_now)
     updated_at: datetime = Field(default_factory=_now)
@@ -108,12 +109,22 @@ class Recipe(RecipeContent):
         member: str,
         can_cook: bool | None,
         likes: bool | None,
+        dislikes: bool | None = None,
     ) -> None:
         if can_cook is not None:
             self.cooks = _toggle(self.cooks, member, enabled=can_cook)
         if likes is not None:
             self.fans = _toggle(self.fans, member, enabled=likes)
+            if likes:
+                self.dislikes = _toggle(self.dislikes, member, enabled=False)
+        if dislikes is not None:
+            self.dislikes = _toggle(self.dislikes, member, enabled=dislikes)
+            if dislikes:
+                self.fans = _toggle(self.fans, member, enabled=False)
         self.updated_at = _now()
+
+    def is_disliked_by_all(self, members: list[str]) -> bool:
+        return bool(members) and set(members) <= set(self.dislikes)
 
 
 def _toggle(members: list[str], member: str, *, enabled: bool) -> list[str]:

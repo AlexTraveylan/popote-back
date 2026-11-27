@@ -2,7 +2,8 @@
 
 Port `src/domain/ports/_recipe_generator.py:RecipeGenerator` (`create`, `rework`), contexte `GenerationContext`
 construit par `use_cases/recipe_studio.py:RecipeStudio` : membres, membre demandeur, contrainte rapide,
-saison visée (`season` de la demande, sinon `season_of(today)`),
+saison visée (`season` de la demande, sinon `season_of(today)`), goûts de chaque membre (`member_tastes`),
+contrainte `stock_only` (rien à acheter), demande vide remplacée par `DEFAULT_RECIPE_REQUEST`,
 ingrédients dispo (familles cuisine + basiques), ingrédients à finir vite, notes du foyer, titres existants.
 
 Adapter `src/adapters/driven/recipe_generators/_openai.py:OpenAIRecipeGenerator` :

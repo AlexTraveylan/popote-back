@@ -50,7 +50,7 @@ Les tables sont créées au démarrage (`init_db`), pas de migrations pour l'ins
 | Service | Rôle |
 |---|---|
 | `StockService` | CRUD stock, drapeau « bientôt plus », vue garde-manger |
-| `RecipeService` | CRUD recettes, membres (cooks = sait la faire, fans = aime) |
+| `RecipeService` | CRUD recettes, goûts (fans = aime, dislikes = n'aime pas, suppression si tout le monde n'aime pas) |
 | `CookingService` | « J'ai cuisiné » : décompte le stock (portions, unités), annulation qui restaure |
 | `SuggestionService` | Recettes du jour classées |
 | `RecipeStudio` | Brouillons ChatGPT (nouvelle recette, retouche) — jamais enregistrés automatiquement |

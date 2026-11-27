@@ -2,7 +2,7 @@ from datetime import date, timedelta
 from uuid import UUID
 
 from src.domain.availability import find_stock_item
-from src.domain.entities import ConsumedIngredient, CookLog, Recipe, StockItem
+from src.domain.entities import ConsumedIngredient, CookLog, Recipe, StockItem, StockKind
 from src.domain.errors import NotFoundError
 from src.domain.household import Household
 from src.domain.ports import CookLogRepository, RecipeRepository, StockRepository
@@ -24,7 +24,8 @@ def _consume_ingredients(
             if not ingredient.optional:
                 missing.append(ingredient.name)
             continue
-        amount = item.consume(ingredient.quantity * scale, ingredient.unit) if ingredient.quantity else None
+        counted = ingredient.quantity and item.kind is StockKind.INGREDIENT
+        amount = item.consume(ingredient.quantity * scale, ingredient.unit) if counted else None
         if amount is None:
             not_counted.append(ingredient.name)
             continue

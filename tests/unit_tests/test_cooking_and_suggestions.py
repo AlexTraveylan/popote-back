@@ -124,32 +124,32 @@ class TestSuggestions:
         container = build_container()
         await container.recipe_service.create(
             recipe_content("Mijoté", [("bœuf", 800, "g")], prep_minutes=150),
-            ["Sam"],
             [],
+            ["Sam"],
             RecipeSource.SEED,
         )
         await container.recipe_service.create(
             recipe_content("Gâteau", [("farine", 250, "g")], prep_minutes=20, tags=[RecipeTag.DESSERT]),
-            ["Sam"],
             [],
+            ["Sam"],
             RecipeSource.SEED,
         )
         quick = await container.recipe_service.create(
             recipe_content("Express", [("pâtes", 400, "g")], prep_minutes=20),
-            ["Sam"],
             [],
+            ["Sam"],
             RecipeSource.SEED,
         )
         await container.recipe_service.create(
             recipe_content("Express de Alex", [("riz", 300, "g")], prep_minutes=15),
-            ["Alex"],
             [],
+            ["Alex"],
             RecipeSource.SEED,
         )
 
         # When
         suggestions = await container.suggestion_service.suggest(
-            SuggestionCriteria(today=TODAY, member="Sam", quick_only=True, only_member_recipes=True),
+            SuggestionCriteria(today=TODAY, member="Sam", quick_only=True, only_liked=True),
         )
 
         # Then

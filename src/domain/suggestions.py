@@ -9,7 +9,6 @@ from src.domain.constants import (
     SCORE_AVAILABILITY_WEIGHT,
     SCORE_EXPIRING_BONUS,
     SCORE_IN_SEASON_BONUS,
-    SCORE_MEMBER_COOK_BONUS,
     SCORE_MEMBER_FAN_BONUS,
     SCORE_OUT_OF_SEASON_PENALTY,
     SCORE_QUICK_BONUS,
@@ -23,7 +22,7 @@ class SuggestionCriteria(BaseModel):
     today: date
     member: str | None = None
     quick_only: bool = False
-    only_member_recipes: bool = False
+    only_liked: bool = False
     tag: RecipeTag | None = None
     season: Season | None = None
     limit: int = DEFAULT_SUGGESTION_LIMIT
@@ -54,7 +53,11 @@ def _is_eligible(recipe: Recipe, criteria: SuggestionCriteria) -> bool:
         return False
     if criteria.quick_only and not recipe.is_quick:
         return False
-    return not (criteria.only_member_recipes and criteria.member is not None and not recipe.concerns(criteria.member))
+    if criteria.member is None:
+        return True
+    if criteria.member in recipe.dislikes:
+        return False
+    return not (criteria.only_liked and criteria.member not in recipe.fans)
 
 
 def _availability_reasons(availability: RecipeAvailability) -> tuple[float, list[str]]:
@@ -102,9 +105,6 @@ def _member_reasons(recipe: Recipe, criteria: SuggestionCriteria) -> tuple[float
     if criteria.member in recipe.fans:
         score += SCORE_MEMBER_FAN_BONUS
         reasons.append(f"{criteria.member} aime")
-    if criteria.member in recipe.cooks:
-        score += SCORE_MEMBER_COOK_BONUS
-        reasons.append(f"{criteria.member} sait la faire")
     return score, reasons
 
 

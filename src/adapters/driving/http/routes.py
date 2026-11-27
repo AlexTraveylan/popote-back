@@ -23,6 +23,7 @@ from src.domain.entities import (
 )
 from src.domain.shopping import PantryOverview, ShoppingContext, week_start
 from src.domain.suggestions import Suggestion, SuggestionCriteria
+from src.use_cases.recipe_service import PreferenceOutcome
 from src.use_cases.shopping_service import PurchaseRecord
 from src.use_cases.stock_service import NewStockItem, StockItemPatch
 
@@ -111,6 +112,7 @@ async def draft_new_recipe(container: ContainerDep, day: DayDep, body: NewRecipe
         body.use_stock,
         day,
         body.season,
+        body.stock_only,
     )
 
 
@@ -136,8 +138,18 @@ async def set_recipe_members(container: ContainerDep, recipe_id: UUID, body: Rec
 
 
 @router.put("/recipes/{recipe_id}/preferences")
-async def set_recipe_preference(container: ContainerDep, recipe_id: UUID, body: RecipePreferenceRequest) -> Recipe:
-    return await container.recipe_service.set_preference(recipe_id, body.member, body.can_cook, body.likes)
+async def set_recipe_preference(
+    container: ContainerDep,
+    recipe_id: UUID,
+    body: RecipePreferenceRequest,
+) -> PreferenceOutcome:
+    return await container.recipe_service.set_preference(
+        recipe_id,
+        body.member,
+        body.can_cook,
+        body.likes,
+        body.dislikes,
+    )
 
 
 @router.post("/recipes/{recipe_id}/drafts")
@@ -167,7 +179,7 @@ async def suggestions(
     day: DayDep,
     member: str | None = None,
     quick: bool = False,
-    mine: bool = False,
+    liked: bool = False,
     tag: RecipeTag | None = None,
     season: Season | None = None,
     limit: Annotated[int, Query(ge=1, le=100)] = DEFAULT_SUGGESTION_LIMIT,
@@ -176,7 +188,7 @@ async def suggestions(
         today=day,
         member=member,
         quick_only=quick,
-        only_member_recipes=mine,
+        only_liked=liked,
         tag=tag,
         season=season,
         limit=limit,

@@ -52,6 +52,11 @@ class RecipeAvailability(BaseModel):
 
     @computed_field
     @property
+    def cookable(self) -> bool:
+        return not self.missing
+
+    @computed_field
+    @property
     def expiring(self) -> list[str]:
         return [check.name for check in self.checks if check.expiring_soon]
 

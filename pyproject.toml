@@ -1,6 +1,6 @@
 [project]
 name = "popote-api"
-version = "0.2.0"
+version = "0.3.0"
 description = "Stock, recettes et courses du foyer, exposés en API HTTP et en serveur MCP"
 readme = "README.md"
 requires-python = ">=3.14"

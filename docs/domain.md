@@ -21,9 +21,17 @@ Correspondance exacte d'abord, sinon l'article du stock doit contenir tous les m
 
 ## Cuisiner (`use_cases/cooking_service.py`)
 
+Seuls les articles de la famille `ingredient` sont décomptés ; basiques, petit-déj et maison se gèrent à la main
+(« bientôt plus ») et finissent dans `not_counted`.
 Portions → facteur `servings / recipe.servings`. Pour chaque ingrédient trouvé : décompte converti (jamais sous 0).
 Résultat `CookLog` : `consumed` (restauré par l'annulation), `not_counted` (non suivi ou unité incompatible),
 `missing` (absent du stock).
+
+## Goûts (`Recipe.fans`, `Recipe.dislikes`)
+
+« J'aime » et « j'aime pas » s'excluent (`Recipe.set_preference`). Les suggestions d'un membre cachent les recettes
+qu'il n'aime pas ; `only_liked` ne garde que celles qu'il aime. Quand tous les membres du foyer n'aiment pas une
+recette, `RecipeService.set_preference` la supprime et renvoie `PreferenceOutcome(deleted=True)`.
 
 ## Saisons (`entities/_recipe.py:Season`, `seasons.py`)
 
@@ -35,7 +43,7 @@ L'ancien tag `saison` est retiré à la lecture (`RecipeContent._drop_legacy_tag
 ## Suggestions (`suggestions.py:rank_recipes`)
 
 Score = ratio d'ingrédients dispo × 100 + 15 par ingrédient à finir vite − 50 si cuisiné depuis moins de
-`RECENTLY_COOKED_DAYS` jours + 12 si le membre aime + 8 s'il sait la faire (+10 « rapide » quand le filtre rapide est actif)
+`RECENTLY_COOKED_DAYS` jours + 12 si le membre aime (+10 « rapide » quand le filtre rapide est actif)
 + 10 si la recette est marquée pour la saison visée, − 30 si elle est marquée pour d'autres saisons
 (saison visée = filtre `season`, sinon `season_of(today)` ; les recettes « toute l'année » sont neutres).
 Le filtre `season` exclut les recettes qui ne lui correspondent pas.

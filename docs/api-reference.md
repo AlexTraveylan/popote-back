@@ -17,15 +17,15 @@ Routes dans `src/adapters/driving/http/routes.py`. OpenAPI interactif : `http://
 | POST | `/api/recipes` | Créer (contenu + `cooks`, `fans`, `source`) |
 | GET/PUT/DELETE | `/api/recipes/{id}` | Lire, remplacer le contenu, supprimer |
 | PUT | `/api/recipes/{id}/members` | Remplacer `cooks` et `fans` |
-| PUT | `/api/recipes/{id}/preferences` | `{member, can_cook?, likes?}` |
+| PUT | `/api/recipes/{id}/preferences` | `{member, can_cook?, likes?, dislikes?}` → `{recipe, deleted}` (supprimée si tous les membres n'aiment pas) |
 | GET | `/api/recipes/{id}/availability?on=` | Ingrédient par ingrédient vs stock |
-| POST | `/api/recipes/drafts` | Brouillon ChatGPT `{request, member, quick, use_stock, season?}` |
+| POST | `/api/recipes/drafts` | Brouillon ChatGPT `{request?, member, quick, use_stock, stock_only, season?}` (request vide = idée avec le stock) |
 | POST | `/api/recipes/{id}/drafts` | Retouche ChatGPT `{instruction, member}` |
 | POST | `/api/recipes/{id}/cook` | « J'ai cuisiné » `{member, servings?, cooked_on?}` → `CookLog` |
-| GET | `/api/suggestions?on=&member=&quick=&mine=&tag=&season=&limit=` | Recettes du jour classées |
+| GET | `/api/suggestions?on=&member=&quick=&liked=&tag=&season=&limit=` | Recettes du jour classées ; `availability.cookable` = tous les ingrédients requis sont là |
 | GET | `/api/cook-logs?start=&end=` · `/api/cook-logs/week?on=` | Repas cuisinés |
 | DELETE | `/api/cook-logs/{id}` | Annuler (restaure le stock) |
-| GET/POST | `/api/plan` · DELETE `/api/plan/{id}` | Planning |
+| GET/POST | `/api/plan` · DELETE `/api/plan/{id}` | Planning (plus utilisé par le front, gardé pour le MCP) |
 | GET | `/api/shopping/context?on=` | Contexte complet de courses (identique au MCP) |
 | GET/POST | `/api/shopping/trips` · DELETE `/api/shopping/trips/{id}` | Historique ; POST réassort le stock (`update_stock=false` pour l'historique seul) |
 | GET | `/api/shopping/history?query=&limit=` | Produits achetés |
